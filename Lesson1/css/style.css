@@ -1,0 +1,94 @@
+*,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+button{
+    background: transparent;
+    border: none;
+}
+.header{
+    height: 150px;
+    background: rgb(199, 199, 199, .8);
+}
+.header__nav{
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 100px;
+}
+.cart-button{
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+.cart-button span{
+    position: absolute;
+    background: rgb(66, 98, 139);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 10px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 2px;
+}
+.carts{
+    margin-top: 100px;
+}
+.carts__inner{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.cart__item{
+    width: 271px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid #E0E0E0;
+    margin-bottom: 50px;
+    position: relative;
+    justify-content: center;
+}
+.cart__item::after{
+    content: url(../images/basket.svg);
+    width: 60px;
+    height: 40px;
+    text-align: center;
+    background: #1C62CD;
+    border-top-left-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 7px;
+}
+.cart__item-img{
+    padding: 0 10px;
+   
+}
+.cart__item-title{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 0 10px;
+}
+.cart__item-text{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    margin: 23px 0 31px;
+}
